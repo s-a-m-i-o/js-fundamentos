@@ -80,3 +80,41 @@ GRUPO 3 — LÓGICOS:
 GRUPO 4 — ATRIBUIÇÃO (atalhos):
 +=  → soma ao valor atual (x += 5 = x = x + 5)
 -=  → subtrai do valor atual
+
+## Bloco 4 - Condicionais
+
+IF/ELSE — para comparações e intervalos:
+if (condição) {
+    // executa se true
+} else if (outraCondição) {
+    // executa se a primeira for false e essa for true
+} else {
+    // executa se nenhuma for true
+}
+
+SWITCH — para valores exatos e específicos:
+switch (variavel) {
+    case valor1:
+        // faz isso
+        break;
+    case valor2:
+        // faz isso
+        break;
+    default:
+        // faz isso se nenhum case bater
+}
+
+QUANDO USAR CADA UM:
+- if/else → comparações, intervalos (hora >= 12 && hora <= 17)
+- switch  → valores exatos (dia 1, 2, 3... cor "vermelho", "azul"...)
+
+DETALHES IMPORTANTES:
+- break → para a execução do switch ao achar o case certo
+- sem break → continua executando os próximos cases (bug!)
+- default → equivalente ao else, executa se nenhum case bater
+- case usa : e não ;
+- NUNCA use = dentro do if — use sempre ===
+
+EXEMPLOS:
+if (hora >= 12 && hora <= 17) → "Boa tarde"
+switch (dia) { case 1: "Segunda" }
