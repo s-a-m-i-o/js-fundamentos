@@ -118,3 +118,44 @@ DETALHES IMPORTANTES:
 EXEMPLOS:
 if (hora >= 12 && hora <= 17) → "Boa tarde"
 switch (dia) { case 1: "Segunda" }
+
+## Bloco 5 pt1 - Funções Básicas
+
+O QUE É:
+Bloco de código escrito uma vez e executado várias vezes.
+Igual uma receita — escreve uma vez, usa quantas vezes quiser.
+
+ESTRUTURA BÁSICA:
+function nomeDaFuncao() {
+    // código aqui
+}
+nomeDaFuncao(); // executa a função
+
+COM PARÂMETROS (variáveis temporárias que recebem valores):
+function nomeDaFuncao(parametro1, parametro2) {
+    // usa os parâmetros aqui
+}
+nomeDaFuncao("valor1", "valor2");
+
+COM RETURN (devolve um valor):
+function nomeDaFuncao(a, b) {
+    return a + b;
+}
+const resultado = nomeDaFuncao(10, 5);
+console.log(resultado); // 15
+
+DIFERENÇA console.log vs return:
+- console.log dentro da função → só mostra, não dá pra usar depois
+- return → devolve o valor pra você decidir o que fazer
+
+PARÂMETROS:
+- São variáveis temporárias que só existem dentro da função
+- Você passa os valores na hora de chamar a função
+- Sem passar valores → parâmetros ficam undefined
+
+EXEMPLOS:
+function apresentar(nome, idade) {
+    return `Olá meu nome é ${nome}, tenho ${idade} anos`;
+}
+const resultado = apresentar("Samio", 36);
+console.log(resultado);
